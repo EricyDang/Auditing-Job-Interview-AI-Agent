@@ -1,0 +1,4 @@
+interface:
+  display_name: "求职审计 Agent"
+  short_description: "多轮诊断简历匹配度、投递策略、外联话术与面试准备报告"
+  default_prompt: "Use $job-audit-agent to audit my resume, target roles, JDs, and application strategy."

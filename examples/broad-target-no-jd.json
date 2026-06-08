@@ -1,0 +1,18 @@
+{
+  "resumeText": "应届毕业生，工商管理专业。做过课程设计、校园活动组织和数据整理，熟悉 Excel 和 PPT，参与社团招新、活动宣传和物资协调。认真负责，学习能力强。",
+  "targetIndustries": ["互联网", "金融", "快消", "教育"],
+  "targetRoles": ["产品", "运营", "市场", "财务都可以"],
+  "targetJDs": [],
+  "applicationHistory": {
+    "count": 50,
+    "platforms": ["Boss直聘", "前程无忧"],
+    "resumeCustomized": false,
+    "feedback": "基本无回复"
+  },
+  "constraints": {
+    "cities": ["上海"],
+    "availableDaysPerWeek": 5,
+    "startDate": "立即到岗"
+  },
+  "materials": {}
+}

@@ -1,0 +1,30 @@
+{
+  "resumeText": "市场营销专业大三学生，做过校园社群运营和小红书内容账号。负责选题、排期、用户互动和活动复盘，熟悉 Excel、公众号后台和小红书平台。曾组织校园活动，覆盖 300 名同学，完成报名收集、现场执行和复盘报告。",
+  "targetIndustries": ["互联网", "教育"],
+  "targetRoles": ["用户运营实习"],
+  "targetJDs": [
+    "岗位职责：负责用户社群运营、活动策划、数据复盘。要求熟悉 Excel，有内容运营或用户增长经验。"
+  ],
+  "candidateStage": "internship",
+  "applicationHistory": {
+    "count": 0,
+    "platforms": [],
+    "roles": [],
+    "cities": [],
+    "referralUsed": false,
+    "resumeCustomized": false,
+    "feedback": "还未开始投递"
+  },
+  "constraints": {
+    "cities": ["上海", "杭州"],
+    "remoteAccepted": true,
+    "availableDaysPerWeek": 4,
+    "startDate": "两周内",
+    "salaryExpectation": "可协商",
+    "longTermAvailable": true
+  },
+  "materials": {
+    "portfolio": "小红书内容案例和活动复盘文档",
+    "certificates": ["英语六级"]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/job-audit-agent/audit-report.schema.json",
+  "title": "AuditReport",
+  "type": "object",
+  "required": [
+    "completenessJudgment",
+    "zeroResponseDiagnosis",
+    "targetClarification",
+    "roleCapabilityModel",
+    "resumeKeywordReview",
+    "recruiterStyleRewrite",
+    "credibilityAndResultOptimization",
+    "fourWeekApplicationStrategy",
+    "outreachTemplates",
+    "interviewSimulation",
+    "finalJobSearchSystem"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "completenessJudgment": { "type": "string" },
+    "zeroResponseDiagnosis": { "type": "string" },
+    "targetClarification": { "type": "string" },
+    "roleCapabilityModel": { "type": "string" },
+    "resumeKeywordReview": { "type": "string" },
+    "recruiterStyleRewrite": { "type": "string" },
+    "credibilityAndResultOptimization": { "type": "string" },
+    "fourWeekApplicationStrategy": { "type": "string" },
+    "outreachTemplates": { "type": "string" },
+    "interviewSimulation": { "type": "string" },
+    "finalJobSearchSystem": { "type": "string" }
+  }
+}

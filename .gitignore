@@ -1,0 +1,22 @@
+node_modules/
+coverage/
+dist/
+tmp/
+temp/
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# Local/private artifacts
+rendered_resume_check/
+tools/
+管培生_简历审计.md
+
+# Keep the Codex skill metadata, but ignore duplicated packaged copies.
+.codex/skills/job-audit-agent/assets/
+.codex/skills/job-audit-agent/references/
+.codex/skills/job-audit-agent/scripts/

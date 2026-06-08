@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/job-audit-agent/candidate-input.schema.json",
+  "title": "CandidateInput",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "resumeText": { "type": "string" },
+    "targetIndustries": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "targetRoles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "targetJDs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 3
+    },
+    "candidateStage": {
+      "type": "string",
+      "enum": ["internship", "campus", "experienced", "unknown"]
+    },
+    "applicationHistory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "count": { "type": "number", "minimum": 0 },
+        "platforms": { "type": "array", "items": { "type": "string" } },
+        "roles": { "type": "array", "items": { "type": "string" } },
+        "cities": { "type": "array", "items": { "type": "string" } },
+        "referralUsed": { "type": "boolean" },
+        "resumeCustomized": { "type": "boolean" },
+        "feedback": { "type": "string" }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cities": { "type": "array", "items": { "type": "string" } },
+        "remoteAccepted": { "type": "boolean" },
+        "availableDaysPerWeek": { "type": "number", "minimum": 0, "maximum": 7 },
+        "startDate": { "type": "string" },
+        "salaryExpectation": { "type": "string" },
+        "longTermAvailable": { "type": "boolean" },
+        "travelAccepted": { "type": "boolean" },
+        "rotationAccepted": { "type": "boolean" }
+      }
+    },
+    "materials": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "portfolio": { "type": "string" },
+        "github": { "type": "string" },
+        "linkedin": { "type": "string" },
+        "certificates": { "type": "array", "items": { "type": "string" } },
+        "transcript": { "type": "string" },
+        "recommendation": { "type": "string" }
+      }
+    }
+  }
+}

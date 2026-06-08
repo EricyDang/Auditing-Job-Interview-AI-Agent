@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/job-audit-agent/audit-state.schema.json",
+  "title": "AuditState",
+  "type": "object",
+  "required": [
+    "infoCompletenessScore",
+    "missingCriticalFields",
+    "assumptions",
+    "candidateStage",
+    "roleFamily",
+    "inferredTargets",
+    "roleModel",
+    "keywordMap",
+    "riskFlags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "infoCompletenessScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "missingCriticalFields": { "type": "array", "items": { "type": "string" } },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "candidateStage": {
+      "type": "string",
+      "enum": ["internship", "campus", "experienced", "unknown"]
+    },
+    "roleFamily": { "type": "string" },
+    "inferredTargets": {
+      "type": "object",
+      "required": ["primaryRole", "secondaryRoles", "notRecommendedRoles"],
+      "additionalProperties": false,
+      "properties": {
+        "primaryRole": { "type": "string" },
+        "secondaryRoles": { "type": "array", "items": { "type": "string" } },
+        "notRecommendedRoles": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "roleModel": {
+      "type": "object",
+      "required": [
+        "hardSkills",
+        "tools",
+        "industryKnowledge",
+        "experienceSignals",
+        "measurableOutcomes",
+        "softSkills",
+        "credentials",
+        "portfolioNeeds"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "hardSkills": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } },
+        "industryKnowledge": { "type": "array", "items": { "type": "string" } },
+        "experienceSignals": { "type": "array", "items": { "type": "string" } },
+        "measurableOutcomes": { "type": "array", "items": { "type": "string" } },
+        "softSkills": { "type": "array", "items": { "type": "string" } },
+        "credentials": { "type": "array", "items": { "type": "string" } },
+        "portfolioNeeds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "keywordMap": {
+      "type": "object",
+      "required": ["required", "covered", "missing", "strengthen", "removeOrWeaken"],
+      "additionalProperties": false,
+      "properties": {
+        "required": { "type": "array", "items": { "type": "string" } },
+        "covered": { "type": "array", "items": { "type": "string" } },
+        "missing": { "type": "array", "items": { "type": "string" } },
+        "strengthen": { "type": "array", "items": { "type": "string" } },
+        "removeOrWeaken": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "riskFlags": { "type": "array", "items": { "type": "string" } }
+  }
+}

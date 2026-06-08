@@ -1,0 +1,30 @@
+{
+  "name": "job-audit-agent",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A model-agnostic multi-turn job search audit agent for resume, JD, and interview review.",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "bin": {
+    "job-audit": "./src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node tests/run-tests.mjs",
+    "audit": "node src/cli.mjs",
+    "audit:example": "node src/cli.mjs examples/operations-intern.json"
+  },
+  "keywords": [
+    "agent",
+    "ats",
+    "career",
+    "interview",
+    "job-search",
+    "resume"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
