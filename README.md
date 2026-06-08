@@ -1,5 +1,7 @@
 # 面试官求职审计 Agent
 
+![CI](https://github.com/EricyDang/Auditing-Job-Interview-AI-Agent/actions/workflows/ci.yml/badge.svg)
+
 一个模型无关的多轮求职审计框架。它把简历、目标岗位、JD、投递历史和限制条件整理成结构化状态，再生成追问问题、LLM 消息、报告骨架和护栏校验结果。
 
 ## 仓库内容
